@@ -10,16 +10,25 @@
 #define FLOOR_MOVE_TIME 2
 #define LOAD_TIME 1
 
-typedef struct Person {
+// Floor structure
+typedef struct {
+	int num;
+	int weight;
+	int serviced;
+} Floor;
+
+// Person structure
+typedef struct {
 	int type;	// 0 for child
 				// 1 for adult
 				// 2 for bellhop
 				// 3 for room service
-	int start;
-	int dest;
-	struct list_head list;
+	int start;	// Start floor
+	int dest;	// End floor
+	struct list_head list;	// List_head for the Person list
 } Person;
 
+// Elevator structure
 typedef struct {
 	int pass;	// Number of passengers
 	int weight; // Total weight
@@ -38,7 +47,11 @@ typedef struct {
 
 Elevator g_elevator;
 
+//Array of 10 floors
 static struct list_head Bldg[10];
 static struct list_head Passengers;
+
+//Holds passenger value, weight, and number serviced
+static Floor floor_data[10];
 
 #endif
