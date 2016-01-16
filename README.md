@@ -1,8 +1,13 @@
-Project 2 - COP4610 Fall 2015 Due Date: 11-02-2015 11:59:59pm
+# COP4610 - Project 2 - Kernel Module
+## Due Date: 11-02-2015 11:59:59pm
 
-Team Members: Evan Lee, John Cyr, Abraheem Omari
+##### Group Members
 
---- Tar Archive / Files ---
+* Evan Lee (El12b)
+* John Cyr(Jrc11v)
+* Abraheem Omari(Afo12)
+
+##### Tar Archive / Files
 
 PART 1:
 
@@ -21,13 +26,15 @@ elevator.c - This is the main source file of the elevator kernel module. This ho
 
 obj.h - This holds the main data structure and variable declaractions of the elevator structure. 
 
---- Server ---
+##### Server
 
 Linprog, compiled with gcc.
---- Makefile Commands ---
+
+##### Makefile Commands
 
 For all three parts, the 'make' command will compile all necessary components.
 The 'clean' command will clean the directory of generated files.
---- Known Bugs / Incomplete ---
 
-None.
+##### Known Bugs / Incomplete
+
+None
